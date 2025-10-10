@@ -1,0 +1,218 @@
+/* Estilos Generales */
+/* Estilos Generales */
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #2C2F48;
+    color: white;
+    line-height: 1.6;
+    border-radius: 21%;
+}
+
+/* Estilos Header */
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #1E1F33; /* Color de fondo más oscuro */
+    border-bottom: 2px solid #3D3F61; /* Línea que separa entre el header y el contenido */
+    position: sticky; /* Hace que el header permanezca visible al hacer scroll */
+    top: 0;
+    z-index: 1000; /* Prioridad del header en el DOM. El contenido bajo el header no lo podrá tapar */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
+    color: #F4B400;
+}
+
+header h2 {
+    font-size: 1.2em;
+    margin: 0;
+    color: #FFFFFF;
+    opacity: 0.8;
+}
+
+/* Navegación */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #F4B400;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #FFFFFF;
+}
+
+/* Sección Hero */
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(rgba(28, 28, 48, 0.8), rgba(28, 28, 48, 0.8)), 
+                url('https://source.unsplash.com/1600x900/?dance,art,stage') no-repeat center center/cover;
+    color: white;
+}
+
+.hero h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.hero button {
+    padding: 10px 20px;
+    background-color: #F4B400;
+    border: none;
+    color: #1E1F33;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+    border-radius: 5px;
+}
+
+.hero button:hover {
+    background-color: #FFD54F;
+}
+
+/* Secciones Generales */
+section {
+    padding: 40px 20px;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #F4B400;
+}
+
+/* Estilos Cards */
+.card {
+    background: #3D3F61;
+    padding: 20px;
+    margin: 15px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+.card img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    margin-bottom: 10px;
+    color: #FFD54F;
+}
+
+.card p {
+    color: #E0E0E0;
+}
+
+/* Galería de Imágenes */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* Sección Contacto */
+form {
+    max-width: 600px;
+    margin: auto;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #F4B400;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #1E1F33;
+    transition: background 0.3s;
+}
+
+form button:hover {
+    background-color: #FFD54F;
+}
+
+/* Pie de Página */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #1E1F33;
+    color: #FFFFFF;
+}
+
+footer a {
+    color: #F4B400;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #FFD54F;
+}
+
+footer .social-icons a {
+    margin: 0 10px;
+    color: #FFD54F;
+    font-size: 1.5em;
+    transition: color 0.3s;
+}
+
+footer .social-icons a:hover {
+    color: #FFFFFF;
+}
+
+/* Medias Queries para Responsividad */
+@media (max-width: 768px) {
+    nav ul {
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
