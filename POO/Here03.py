@@ -32,7 +32,7 @@ class CuentaCorriente(Cuenta):
             print("Fondos insuficientes. No se puede realizar el retiro.")
 
 
-cuenta_ahorro = CuentaAhorro("Mariana Rojas", 2000, 5)
+cuenta_ahorro = CuentaAhorro("Samuel Rodriguez", 2000, 5)
 cuenta_corriente = CuentaCorriente("Emanuel Morales", 1000, 500)
 
 print("CUENTA DE AHORRO:")
